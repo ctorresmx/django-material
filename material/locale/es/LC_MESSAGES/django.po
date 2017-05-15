@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: django-material\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-15 00:44+0000\n"
+"POT-Creation-Date: 2017-05-15 01:02+0000\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -103,24 +103,24 @@ msgstr "Cambiar"
 msgid "New"
 msgstr "Agregar"
 
-#: admin/templates/admin/change_form.html:33
+#: admin/templates/admin/change_form.html:32
 msgid "Please correct the error below."
 msgstr "Por favor corrija el error."
 
-#: admin/templates/admin/change_form.html:33
+#: admin/templates/admin/change_form.html:32
 msgid "Please correct the errors below."
 msgstr "Por favor corrija los errores."
 
-#: admin/templates/admin/change_form.html:58
+#: admin/templates/admin/change_form.html:57
 msgid "Tools"
 msgstr "Herramientas"
 
-#: admin/templates/admin/change_form.html:62
+#: admin/templates/admin/change_form.html:61
 #: admin/templates/admin/object_history.html:8
 msgid "History"
 msgstr "Historial"
 
-#: admin/templates/admin/change_form.html:66
+#: admin/templates/admin/change_form.html:65
 msgid "View on site"
 msgstr "Ver en sitio"
 
@@ -138,6 +138,7 @@ msgstr "Eliminar de ordenamiento"
 
 #: admin/templates/admin/delete_confirmation.html:12
 #: admin/templates/admin/submit_line.html:32
+#: admin/templates/material/admin/edit_inline/stacked.html:59
 #: frontend/templates/material/frontend/views/confirm_delete.html:7
 #: frontend/templates/material/frontend/views/detail.html:29
 msgid "Delete"
