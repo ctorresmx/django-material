@@ -164,6 +164,13 @@ class Column(LayoutNode):
         self.span_columns = kwargs.pop('span_columns', 1)
         self.column_id = kwargs.pop('column_id', None)
 
+    def get_context_data(self, context):
+        """Additional context data to render node template.
+
+        Subclasses could override it.
+        """
+        return {'column_id': self.column_id}
+
 
 class Span(object):
     """Wrapper for a field reference.
