@@ -293,7 +293,7 @@ def admin_related_field_urls(bound_field):
     ])
 
     context = {
-        'widget': rel_widget.widget.render(bound_field.name, bound_field.value()),
+        'widget': rel_widget.widget.render(bound_field.name, bound_field.value(), attrs={}),
         'name': bound_field.name,
         'url_params': url_params,
         'model': rel_opts.verbose_name,
