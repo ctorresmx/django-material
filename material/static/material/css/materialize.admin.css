@@ -56,8 +56,6 @@ th {
 @media only screen and (min-width: 993px) {
   html {
     overflow-y: scroll; }
-  main, footer {
-    margin-left: 300px; }
   nav {
     padding-left: 40px; } }
 
