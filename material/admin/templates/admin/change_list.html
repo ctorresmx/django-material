@@ -116,9 +116,7 @@
 {% if has_add_permission %}
 {% url cl.opts|admin_urlname:'add' as add_url %}
 <div class="fixed-action-btn">
-    <a class="btn-floating btn-large waves-effect waves-light red z-depth-2" href="{% add_preserved_filters add_url is_popup to_field %}">
-        <i class="large material-icons">add</i>
-    </a>
+    <a class="waves-effect waves-light btn z-depth-2" href="{%  add_preserved_filters add_url is_popup to_field %}"><i class="material-icons left">add</i>{% trans 'Add' %}</a>
 </div>
 {% endif %}
 
