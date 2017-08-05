@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 from django.utils.safestring import mark_safe
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import ugettext_lazy as _
 
 
 @python_2_unicode_compatible
@@ -33,6 +33,9 @@ class Sea(models.Model):
 
     basin_countries = models.ManyToManyField(
         'Country', related_name='seas', blank=True)
+
+    def get_parent_id_display(self):
+        return self.parent
 
     class Meta:
         verbose_name = _('sea')

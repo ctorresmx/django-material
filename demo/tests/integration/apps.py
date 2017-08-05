@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 from material.frontend.apps import ModuleMixin
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import ugettext_lazy as _
 
 
 class IntegrationAppConfig(ModuleMixin, AppConfig):
@@ -9,4 +9,4 @@ class IntegrationAppConfig(ModuleMixin, AppConfig):
     verbose_name = _("CRUD sample")
 
     def has_perm(self, user):
-        return user.is_authenticated()
+        return user.is_superuser

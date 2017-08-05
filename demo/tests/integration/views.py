@@ -1,4 +1,4 @@
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import ugettext_lazy as _
 
 from material import Layout, Row, Fieldset
 from material.frontend.views import ModelViewSet
@@ -8,6 +8,7 @@ from . import models
 
 class CityViewSet(ModelViewSet):
     model = models.City
+    ordering = ['-country', 'name']
     list_display = ('name', 'country', 'population')
 
 
